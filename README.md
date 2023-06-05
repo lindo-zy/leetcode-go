@@ -70,3 +70,31 @@ func isNumber(s string) bool {
 }
 ```
 
+#### [剑指 Offer 06. 从尾到头打印链表](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
+
+```
+func reversePrint(head *ListNode) []int {
+	if head == nil {
+		return nil
+	}
+	return append(reversePrint(head.Next), head.Val)
+
+}
+```
+
+#### [剑指 Offer 58 - I. 翻转单词顺序](https://leetcode.cn/problems/fan-zhuan-dan-ci-shun-xu-lcof/)
+
+```
+func reverseWords(s string) string {
+    s = strings.Trim(s, " ")
+    words := strings.Fields(s)
+    i, j := 0, len(words) - 1
+    for i < j {
+        words[i], words[j] = words[j], words[i]
+        i++
+        j--    
+    }
+    return strings.Join(words, " ")
+}
+```
+
