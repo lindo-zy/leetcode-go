@@ -1,9 +1,9 @@
 package main
 
 import (
-	"leetcode-go/hot100"
+	"leetcode-go/dynamic"
 )
 
 func main() {
-	hot100.SolutionAddTwoNumbers()
+	dynamic.SolutionFib()
 }
