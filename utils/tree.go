@@ -18,7 +18,7 @@ func CreateTree(data string) *TreeNode {
 		return nil
 	}
 	nodesStr := strings.Split(data, ",")
-	if nodesStr[0] == "null" {
+	if nodesStr[0] == "null" || nodesStr[0] == "nil" {
 		return nil
 	}
 
