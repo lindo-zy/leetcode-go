@@ -2,4 +2,4 @@ module leetcode-go
 
 go 1.21
 
-require github.com/deckarep/golang-set v1.8.0
+require github.com/emirpasic/gods v1.18.1
